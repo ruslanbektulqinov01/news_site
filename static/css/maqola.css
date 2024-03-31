@@ -12,6 +12,7 @@
     --link2hover: #5432d3;
     --light-gray: #232323;
     --accent-color: #282b42;
+    --backgroundOfLink: #020202;
 }
 html{
     scroll-behavior: smooth;

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {%load static%}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon" title="your logo">
+    <link rel="shortcut icon" href="{% static "icon/icon.ico"%}" type="image/x-icon" title="your logo">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    {% load static %}
-   <link rel="stylesheet" type="text/css" href="{% static '/css/maqola.css' %}"/>
+
+    <link rel="stylesheet" href="{% static "css/maqola.css" %}"/>
+    
     <title>News | Main page</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
         <div class="navbar">
             <div class="logo">
                 <a href="http://127.0.0.1:8000/">
-                    <img src="https://cdn.dribbble.com/users/2592071/screenshots/7327591/logo-artboard_2_4x_4x.png"alt="Your logo here">
+                    <img src="{% static "img/logo.png" %}" alt="Your logo here">
                 </a>
             </div>
             <ul class="links">
@@ -46,7 +48,7 @@
             </ul>
             <ul class="links1">
                 <li>
-                    <a href="#">
+                    <a href="/login/">
                         Login
                     </a>
                 </li>
@@ -88,7 +90,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="/login/">
                         Login
                     </a>
                 </li>

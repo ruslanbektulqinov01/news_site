@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from articles.models import Article
 from articles.forms import ArticleForm
+from django.http import Http404
 
 
 def article_all(request):
@@ -18,3 +19,6 @@ def article_all(request):
         'maqolalar': maqolalar
     }
     return render(request, 'maqola.html', context=context)
+
+def login(request):
+    return render(request, 'auth/login.html')

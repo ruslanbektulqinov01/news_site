@@ -1,4 +1,6 @@
-#!/home/ruslanbek/Soft_Enge_Projects/all_django_projects/news_site/venv/bin/python
+#!/bin/sh
+'''exec' "/Users/muxtorovshaxzodbek/Library/Mobile Documents/com~apple~CloudDocs/Desktop/new_site/venv/bin/python3.12" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys
